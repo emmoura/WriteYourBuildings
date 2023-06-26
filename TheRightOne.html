@@ -2,13 +2,24 @@
 <html lang="en">
   
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    
   <title>WriteBuildings</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    <img src="file://LAPTOP-R36RDQ7M/Users/elisa/Desktop/Projj/blender cenário/exports/WrittenCity.png" alt="WrittenCity">
    body {
-      background-image: url("file://LAPTOP-R36RDQ7M/Users/elisa/Desktop/Projj/blender cenário/exports/WrittenCity.png)
-"); 
+      background-image: url('file://LAPTOP-R36RDQ7M/Users/elisa/Desktop/Projj/blender cenário/exports/WrittenCity.png'); 
+      background-color: #cccccc; /* Used if the image is unavailable */
+      height: 500px; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+}
       margin: 20px;
       padding: 20px;
     }
@@ -22,28 +33,22 @@
       color: #1c1912;
       padding: 20px;
     }
-  </style>
-  
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  
+  </style>  
 </head>
   
 <body>
-  <main>
+  <input type="checkbox" id="active">
+  <label for="active" class="menu-btn"><span></span></label>
+  <label for="active" class="close"></label>
     
-      <input type="checkbox" id="active">
-    <label for="active" class="menu-btn"><span></span></label>
-    <label for="active" class="close"></label>
-      
-    <div class="wrapper">
-      <ul>
-        <li><a href="https://emmoura.github.io/WriteYourBuildings/TheRightOne.html">Home</a></li>
-        <li><a href="https://emmoura.github.io/AboutWrittenBuildings/AboutCode.html">About The Project</a></li>
-      </ul>
-    </div> 
-    
+  <div class="wrapper">
+    <ul>
+      <li><a href="https://emmoura.github.io/WriteYourBuildings/TheRightOne.html">Home</a></li>
+      <li><a href="https://emmoura.github.io/AboutWrittenBuildings/AboutCode.html">About The Project</a></li>
+    </ul>
+  </div> 
+  
+  <main>    
     <div class="center">
     </div>
     
@@ -54,7 +59,7 @@
       action="https://formsubmit.co/emmoura@edu.ulisboa.pt" 
       method="POST"
     >
-    <textarea id="description" name = "description" style="height: 200px; border:20px solid; padding: 40px;" required>
+    <textarea id="description" name = "description" style="height: 200px; border:20px solid; padding: 2px;" required>
     </textarea>
     <br>
     <button type="submit">Build!</button>

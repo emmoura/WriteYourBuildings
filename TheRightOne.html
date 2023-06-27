@@ -141,19 +141,27 @@ input[type="checkbox"]{
   z-index: -1;
   text-align: center;
   width: 100%;
-  color: #202020;
+  color: .contentB{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #cccccc;
 }
 .content .title{
   font-size: 40px;
   font-weight: 700;
 }
 .content p{
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 700;
 }
 .contentB{
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -169,25 +177,6 @@ input[type="checkbox"]{
   font-size: 35px;
   font-weight: 600;
 }
-.contentC{
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  text-align: center;
-  width: 100%;
-  color: #202020;
-}
-.contentC .title{
-  font-size: 40px;
-  font-weight: 700;
-}
-.contentC p{
-  font-size: 35px;
-  font-weight: 600;
-}
-
 #active:checked ~ .wrapper ul li a{
   opacity: 1;
 }
@@ -228,7 +217,7 @@ body {
 <p class="content">Leave a Message, Get a Building!</p> 
 	
 <form action="https://formsubmit.co/el/confirm/89909a8ddafcd81ac5d9bac6ce5a77a3" method="post" 
-	class="contentB">
+	class="contentB" height="200px" width="500">
 <textarea id="description" name="description" required></textarea>	
 <br>
 <button type="submit" top="50%" left="50%">Submit</button>

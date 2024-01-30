@@ -100,7 +100,7 @@
   text-align: center;
 }
 .wrapper ul li{
-  height: 90%;
+  height: 20%; /*JUST CHANGED THIS FROM 90%*/
   margin: 30px 0;
 }
 .wrapper ul li a{
@@ -136,7 +136,7 @@
   transform: scaleY(2);
 }
 .wrapper ul li a:hover{
-  color: #888A8E;
+  color: #888A8E; /*cor letras*/
 }
 input[type="checkbox"]{
   display: none;
@@ -168,7 +168,7 @@ input[type="checkbox"]{
 }
 #active:checked ~ .wrapper ul li a{
 	transform: none;
-	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+	transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1);
    transition-delay: .6s;
   transform: translateX(-100px);
 }
